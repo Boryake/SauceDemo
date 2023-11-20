@@ -1,0 +1,90 @@
+Cliente: Producción
+Tester: Pasqua Facundo Nicolás
+Ticket: TK 00 - 00001 - Bug
+Tema/Pantalla/Campo/Proceso: Sauce Demo
+Incidente N°: 1
+Ambiente de Testing:
+Url: https://www.saucedemo.com/
+Browser: Google chrome, Versión 119.0.6045.160 (Build oficial) (64 bits)
+Precondiciones:
+Loguearse, realizar checkout sin seleccionar productos
+Pasos para reproducir el bug:
+Iniciar sesion
+Selecionar carrito
+Hacer click en “Checkout”
+Completar datos First Name, Last Name y Zip/Postal Code
+Hacer click en "Continue" y luego "Finish"
+Resultado esperado:
+El sistema debe arrojar un error de que es necesario ingresar items al carrito para realizar el checkout. 
+Resultado obtenido:
+Se realiza circuito de compra completo. 
+Evidencia:bug1.png (alojado en está misma carpeta)
+
+///
+
+Cliente: Producción
+Tester: Pasqua Facundo Nicolás
+Ticket: TK 00 - 00002 - Bug
+Tema/Pantalla/Campo/Proceso: Sauce Demo
+Incidente N°: 2
+Ambiente de Testing:
+Url: https://www.saucedemo.com/
+Browser: Google chrome, Versión 119.0.6045.160 (Build oficial) (64 bits)
+Precondiciones:
+Validacion datos checkout
+Pasos para reproducir el bug:
+Iniciar sesion
+Seleccionar productos
+Hacer click en “Checkout”
+Completar datos First Name, Last Name y Zip/Postal Code
+Resultado esperado:
+Debe validar que First Name y Last Name no cuenten con valores numericos o caracteres especiales,
+tampoco cuenta con maximo o min de caracteres, debe validarse CP dependiendo de la región.  
+Resultado obtenido:
+Permite colocar caracteres especiales y numeros, no cuenta con limite de caracteres. 
+Evidencia:bug2.png (alojado en está misma carpeta)
+
+///
+
+Cliente: Producción
+Tester: Pasqua Facundo Nicolás
+Ticket: TK 00 - 00003 - Bug
+Tema/Pantalla/Campo/Proceso: Sauce Demo
+Incidente N°: 3
+Ambiente de Testing:
+Url: https://www.saucedemo.com/
+Browser: Google chrome, Versión 119.0.6045.160 (Build oficial) (64 bits)
+Precondiciones:
+Ingresar con user: "problem_user"
+Pasos para reproducir el bug:
+Iniciar sesion con problem_user
+Seleccionar productos
+Resultado esperado:
+Cada producto debe contar con su imagen correspondiente.  
+Resultado obtenido:
+Se replican la misma imagen en todos los productos. 
+Evidencia:bug3.png (alojado en está misma carpeta)
+
+//
+
+Cliente: Producción
+Tester: Pasqua Facundo Nicolás
+Ticket: TK 00 - 00004 - Bug
+Tema/Pantalla/Campo/Proceso: Sauce Demo
+Incidente N°: 4
+Ambiente de Testing:
+Url: https://www.saucedemo.com/
+Browser: Google chrome, Versión 119.0.6045.160 (Build oficial) (64 bits)
+Precondiciones:
+Ingresar con user: "problem_user"
+Pasos para reproducir el bug:
+Iniciar sesion
+Seleccionar productos.
+Ir a carrito
+Ir a checkout
+Completar Datos
+Resultado esperado:
+Completar datos y avanzar a sig pantalla
+Resultado obtenido:
+Al completar Last Name, modifica los datos de First Name
+Evidencia:bug4.png (alojado en está misma carpeta)
