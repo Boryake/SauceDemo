@@ -10,6 +10,7 @@ describe('SauceDemo', { testIsolation: false }, () => {
         cy.clearLocalStorage();
         cy.visit('https://www.saucedemo.com');
         cy.login(userOk, pass);
+        
     });
 
     it('Steps with standar_user',()=>{
